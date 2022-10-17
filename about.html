@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: center;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+aside {
+            width: 58%;
+            height: 67%;
+            padding-left: 10px;
+            margin-left: 10px;
+            float: right;
+            font-style: italic;
+            background-color: lightblue;
+        }
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Me</h1>
+  <p>Something about who am I and what I do.</p>
+</div>
+
+<h2 style="text-align:center">Something about Website</h2>
+<aside>
+<p><br><br>
+    We all know about Coursera, as you all can see that my wesite name is Coursera, and <br>
+    I just little bit try to make make a website and link with Coursera. the course of this <br>
+    website all relate with Coursera. <br><br>
+    
+    Coursera partners with more than 275+ leading universities and companies to bring<br>
+ flexible, affordable, job-relevant online learning to individuals and organizations worldwide.<br><br>
+
+ <strong>World-Class</strong><br>
+ Learn from experts at 275+ leading universities and companies.<br>
+Earn recognized credentials from leading universities and companies to achieve your goals.<br><br>
+ 
+ <strong>Affordable</strong><br>
+Explore hundreds of free courses or get started with a free trial.<br>
+Earn a university degree and enjoy high-quality curriculum, affordable pricing, and flexible scheduling.<br><br>
+ 
+ <strong>Flexible</strong>
+ Get on-demand lectures for desktop and mobile—on your schedule.<br>
+Choose from free courses, hands-on projects, certificate programs, and stackable credentials.<br><br>
+
+ <strong>Job-relevant</strong><br><br>
+ Master essential career skills based on comprehensive skills data.<br>
+  Build personal and professional skills with applied learning.</p>
+
+  <strong>Thank you all for pay attention here :)</strong><br><br><br><br>
+</aside>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="Me.png" alt="Indrani" style="width:100%">
+      <div class="container">
+        <h2>Indrani Dey</h2>
+        <p class="title">Front-end Developer</p>
+        <p>Working at Capgemini as a Software Associate</p>
+        <p>someone@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  
+</body>
+</html>

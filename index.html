@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Coursera</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+
+        .header {
+            padding: 80px;
+            text-align: center;
+            background: #412fdf;
+            color: white;
+        }
+
+       
+        .header h1 {
+            font-size: 40px;
+        }
+
+        
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            position: sticky;
+            position: -webkit-sticky;
+            top: 0;
+        }
+
+        
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+
+       
+        .navbar a.right {
+            float: right;
+        }
+
+       
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+       
+        .navbar a.active {
+            background-color: #666;
+            color: white;
+        }
+
+       
+        .row {
+            display: -ms-flexbox;
+
+            display: flex;
+            -ms-flex-wrap: wrap;
+
+            flex-wrap: wrap;
+        }
+
+        .side {
+            -ms-flex: 30%;
+            flex: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+
+        /* Main column */
+        .main {
+            -ms-flex: 70%;
+            flex: 70%;
+            background-color: white;
+            padding: 20px;
+        }
+
+        /* Fake image, just for this example */
+
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+
+        }
+
+        /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 700px) {
+            .row {
+                flex-direction: column;
+            }
+        }
+
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+            .navbar a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Coursera</h1>
+        <p>website created by Indrani Dey</p>
+    </div>
+
+    <div class="navbar">
+        <a href="#" class="active"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="sign.html">SignUp</a>
+        <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+        <a href="about.html" class="right">About</a>
+        <a href="login.html" class="right"><i class="fa fa-fw fa-user"></i>Login</a>
+        
+            <form style="left: float; display: inline-block; line-height: 47px; padding-right:14px;">
+            <input type="text" name="searchbar" placeholder="search.." size="40">
+            <button type="submit">Submit</button>
+        </form>
+        
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <h2>About Courses</h2>
+
+            <img src="code.jpg" height="200px">
+            <p>A programming language is any set of rules that converts strings, or graphical program elements in the
+                case of visual programming languages, to various kinds of machine code output. Programming languages are
+                one kind of computer language, and are used in computer programming to implement algorithms.In coursera
+                we provides some programming language course like Java, Python, HTML. we are sure that this courses
+                gives you a brigth future.</p>
+            <hr>
+            <h3>Courses</h3>
+
+            <p>Click on this picture to get your favourite course</p>
+            <a href="https://www.coursera.org/specializations/python" target="_blank"><img src="python.png"
+                    height="190px"></a><br>
+            <p>Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code
+                readability with the use of significant indentation. Python is dynamically-typed and garbage-collected.
+                It supports multiple programming paradigms, including structured, object-oriented and functional
+                programming</p>
+            <a href="https://www.coursera.org/specializations/java-programming" target="_blank"><img src="java.png"
+                    width="170px" height="190px"></a><br>
+            <p>Java is a high-level, class-based, object-oriented programming language that is designed to have as few
+                implementation dependencies as possible.</p>
+            <a href="https://www.coursera.org/learn/html" target="_blank"><img src="html.png" width="170px"
+                    height="190px"></a><br>
+            <p>The HyperText Markup Language or HTML is the standard markup language for documents designed to be
+                displayed in a web browser.
+                It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as
+                JavaScript.</p>
+        </div>
+
+
+        <div class="main">
+            <h1>Learn to code — for free.</h1>
+            <h1>Build projects.</h1>
+            <h1>Earn certifications.</h1><br>
+            <img src="coursera.png" width="600px" height="400px">
+            <h2><i>To bring the best learning. to every corner of the world. So that anyone, anywhere has the power to.
+                    transform their life through learning.<br>
+                    In 2020, leading companies like BNP Paribas Cardif, Capgemini, Campofrio, Liberty Global, Novartis,
+                    Sberbank, Stanley Black & Decker, Tata Communications, and WPP engaged Coursera to reskill their
+                    workforce and prepare for future growth.</i></h2><br>
+
+            <img src="lead.png" width="600px" height="400px"><br>
+            <p>Trending courses, guided projects, and skills among employees in 2020.</p><br>
+            <hr>
+            <br>
+            <p>
+            <h3>“Our close partnership with Coursera adds to our employees’ seamless learning experience, enriching
+                customer, technical and human-centric skills through our social learning environment and contributing to
+                personal and professional growth.”</h3><br>
+
+            <i>Denisa Pandia, Global Program Manager Learning, Signify Innovation</i></p>
+
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <p><i><b>CodewithIndu</b></i><br><br>
+                <a href="feedback.html">Feedback</a>
+            </p>
+            <img src="logoS.png">
+
+        </div>
+    </footer>
+</body>
+
+</html>
